@@ -4,12 +4,14 @@ The Code uses mechine interupts such as timer interupts to time the game and key
 
 https://github.com/user-attachments/assets/4187f4ca-70b8-49af-9139-5a798acfb4dc
 
-Go to this website and upload the vga.c file then change this constant at the top:
+To get started:
+* Go to this website: https://cpulator.01xz.net/?sys=rv32-de1soc
+* in the Editor window, change Language from RV32 to C
+* change this preprocessor directive at the top:
 
 ```bash
 #define DE10LITE 0 // change to 0 for CPUlator or DE1-SoC, 1 for DE10-Lite
 ```
-https://cpulator.01xz.net/?sys=rv32-de1soc
 
 ## Getting Started with Hardware 🛠️
 
@@ -58,32 +60,16 @@ You can edit your vga.c program, save it, then run `make COMPILE` and `make RUN`
 Hint: the easiest way to edit is with `notepad vga.c`, but you can also right-click the
 file and use notepad++ or launch WSL and run vim.
 
-### Using CPUlator
-
-Instead of using GDB and using your FPGA board, you can run things on CPUlator.
-This tool, written by a former UBC Master's student / UofT PhD student Henry Wong,
-perfectly emulates the DE1-SoC Computer System with RISC-V as well as several
-other computers and processors. Henry runs this website on his own.
-
-http://cpulator.01xz.net
-
-To get started:
-* select RISC-V RV32 under Architecture
-* select RISC-V RV32 DE1-SoC under System
-* select Go
-* in the Editor window, change Language from RV32 to C
-
-All of your source code has to appear in the one edit window (as a single file).
-For this lab, first paste the contents of `vga.c` into the Editor window. Then,
-find the line that says `#include "address_map_niosv.h` and delete it; in its place,
-paste the entire contents of the file `address_map_niosv.h`.
-
-**WARNING** since CPUlator is a website, pressing REFRESH on the web page might
-cause your program to disappear. Save if locally using the `File --> Save ...` feature.
-Likewise, you can load it back again using `File --> Load...`.
-
 ### Switching between CPUlator (DE1-SoC) and DE10-Lite
 
 If you have a DE1-SoC, or are running in CPUlator, modify the beginning of
 `address_map_niosv.h` so it reads `#define DE10LITE 0`. If you switch from
 CPUlator back to DE10-Lite hardware, be sure to change the 0 back to a 1.
+
+## Tech Stack 🛠️
+
+Embedded C programmming on RISC-V
+
+# Contact 📬
+
+Created by Owen Anderson on Nov 26, 2025
