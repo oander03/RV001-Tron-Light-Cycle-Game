@@ -1,4 +1,4 @@
-# RV001-Tron-Light-Cycle-Game
+# Tron Light Cycle Game
 This code is allows you to play Tron light cycle on a VGA monitor using your FPGA board with embedded C programmming on RISC-V.
 The Code uses mechine interupts such as timer interupts to time the game and key interupts to register key presses outside of timer interupts.
 
