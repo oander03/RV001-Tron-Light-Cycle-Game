@@ -1,6 +1,14 @@
 # RV001-Tron-Light-Cycle-Game
 This code is allows you to play Tron light cycle on your FPGA board using embedded C programmming on RISC-V.
 
+https://github.com/user-attachments/assets/4187f4ca-70b8-49af-9139-5a798acfb4dc
+
+Go to this website and upload the vga.c file then change the constant at the top
+
+```bash
+#define DE10LITE 0 // change to 0 for CPUlator or DE1-SoC, 1 for DE10-Lite
+```
+https://cpulator.01xz.net/?sys=rv32-de1soc
 
 ## Getting Started with Hardware 🛠️
 
