@@ -1,9 +1,10 @@
 # RV001-Tron-Light-Cycle-Game
-This code is allows you to play Tron light cycle on your FPGA board using embedded C programmming on RISC-V.
+This code is allows you to play Tron light cycle on a VGA monitor using your FPGA board with embedded C programmming on RISC-V.
+The Code uses mechine interupts such as timer interupts to time the game and key interupts to register key presses outside of timer interupts.
 
 https://github.com/user-attachments/assets/4187f4ca-70b8-49af-9139-5a798acfb4dc
 
-Go to this website and upload the vga.c file then change the constant at the top
+Go to this website and upload the vga.c file then change this constant at the top:
 
 ```bash
 #define DE10LITE 0 // change to 0 for CPUlator or DE1-SoC, 1 for DE10-Lite
